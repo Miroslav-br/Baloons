@@ -1,0 +1,61 @@
+.button {
+	@include style-link($color-gray);
+	background: #fff;
+	padding: 1.5rem 4rem;
+	border-radius: 5rem;
+	transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+	position: relative;
+	font-size: 2rem;
+
+	&:hover {
+		transform: translateY(-0.4rem);
+		box-shadow: $box-shadow;
+		&::after {
+			opacity: 0;
+			transform: scaleX(1.5) scaleY(1.7);
+		}
+	}
+
+	&:active {
+		transform: translateY(0.2rem);
+	}
+
+	&::after {
+		content: '';
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+		background-color: $color-white;
+		border-radius: 5rem;
+		position: absolute;
+		top: 0rem;
+		left: 0rem;
+		z-index: -1;
+		transition: all 0.4s;
+	}
+
+	&_animated {
+		animation: fade-in-down 0.6s ease-in-out 0.2s backwards;
+	}
+
+	&_brown {
+		background-color: $color-brown-dark;
+		color: $color-white;
+		&::after {
+			background-color: $color-brown-dark;
+		}
+	}
+}
+
+@include respond(laptop) {
+	.button {
+		padding: 1rem 3.5rem;
+		font-size: 1.8rem;
+	}
+}
+@include respond(tablet) {
+	.button {
+		padding: 2.5rem 6rem;
+		font-size: 2.4rem;
+	}
+}

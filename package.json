@@ -1,0 +1,24 @@
+{
+  "name": "baloons",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compileScss": "sass --no-source-map -w src/styles/style.scss src/styles/style.css",
+    "build:compile": "sass --no-source-map src/styles/style.scss src/styles/style.css",
+    "build:prefixes": "postcss src/styles/style.css --use autoprefixer --output src/styles/prefixed.css",
+    "build:optimize": "csso src/styles/prefixed.css --output ./style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.64.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "csso-cli": "^4.0.2",
+    "postcss": "^8.4.27",
+    "postcss-cli": "^10.1.0"
+  }
+}

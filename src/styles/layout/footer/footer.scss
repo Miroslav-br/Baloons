@@ -1,0 +1,70 @@
+.footer {
+	background-color: $color-black;
+	padding: 8rem;
+
+	&__logo {
+		width: 12rem;
+	}
+
+	&__list {
+		width: 100%;
+		text-align: center;
+	}
+
+	&__item {
+		display: inline-block;
+		&:not(:last-child) {
+			margin-right: 5rem;
+		}
+	}
+
+	&__link {
+		color: $color-gray;
+		text-transform: uppercase;
+		font-size: 1.6rem;
+		letter-spacing: 0.2rem;
+		transition: all 0.2s ease-in-out;
+		display: inline-block;
+
+		&:hover {
+			color: $color-white;
+			transform: scale(1.1) translateY(-1rem);
+		}
+	}
+}
+
+@include respond(laptop) {
+	.footer {
+		&__item {
+			&:not(:last-child) {
+				margin-right: 3rem;
+			}
+		}
+
+		&__link {
+			font-size: 1.3rem;
+		}
+	}
+}
+
+@include respond(tablet) {
+	.footer {
+		&__item {
+			margin-bottom: 2rem;
+			margin-right: 0;
+			padding: 2rem;
+		}
+
+		&__link {
+			font-size: 1.6rem;
+		}
+	}
+}
+
+@include respond(phone) {
+	.footer {
+		&__link {
+			font-size: 2.5rem;
+		}
+	}
+}

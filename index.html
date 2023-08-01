@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <title>Baloons</title>
+</head>
+<body>
+  <div class="app">
+    <div class="navigation">
+      <input type="checkbox" class="navigation__input" id="navigation-toggle">
+      <label for="navigation-toggle" class="navigation__button">
+        <span class="navigation__burger"></span>
+      </label>
+      <div class="navigation__background"></div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="#" class="navigation__link">о нас</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">скидки</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">лучшие туры</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">калькулятор цены</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">связаться с нами</a></li>
+        </ul>
+      </nav>
+    </div>
+    <header class="header">
+      <img src="src/balloon-1-svgrepo-com.svg" alt="Логотип воздушный шар" class="header__logo">
+      <div class="header__box">
+        <h1 class="title-first">
+          <span class="title-first__main">туры на воздушном шаре</span>
+          <span class="title-first__second">незабываемое приключение ждет вас</span>
+        </h1>
+        <a href="#" class="button button_animated">наш каталог</a>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section-about">
+        <h2 class="title-second mb-8 text-align-center">невероятное ощущение свободы</h2>
+        <div class="row">
+          <div class="col-1-of-2">
+            <h3 class="title-third mb-1">
+              позвольте себе приключения
+            </h3>
+            <p class="paragraph mb-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae necessitatibus nemo distinctio enim ipsum, iusto dolor consectetur fuga! Iste ex iusto velit nihil sunt perferendis numquam saepe exercitationem. Quae, pariatur! 
+            </p>
+            
+            <h3 class="title-third mb-1">
+              вверх на 3000м над землей 
+            </h3>
+            <p class="paragraph mb-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aspernatur at quisquam dolor alias sint earum, ab veniam nihil perspiciatis. Aut nam, veritatis quia repellat porro at exercitationem laborum ratione?
+            </p>
+
+            <a href="#" class="btn-text">Узнать больше &rarr;</a>
+          </div>
+          <div class="col-1-of-2">
+            <div class="composition">
+              <img src="./src/images/composition1.jpg" alt="Photo baloons 1" class="composition__image composition__image_n1">
+              <img src="./src/images/composition2.jpg" alt="Photo baloons 2" class="composition__image composition__image_n2">
+              <img src="./src/images/composition3.jpg" alt="Photo baloons 3" class="composition__image composition__image_n3"> 
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-adventure">
+        <div class="row">
+          <div class="col-1-of-4">
+            <div class="adventure-card">
+              <i class="adventure-card__icon fa-solid fa-earth-americas mb-3"></i>
+              <h3 class="title-third mb-1">приключения</h3>
+              <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio provident perferendis omnis quidem, eos saepe!</p>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="adventure-card">
+              <i class="adventure-card__icon fa-solid fa-compass mb-3"></i>
+              <h3 class="title-third mb-1">приключения</h3>
+              <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio provident perferendis omnis quidem, eos saepe!</p>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="adventure-card">
+              <i class="adventure-card__icon fa-solid fa-location-dot mb-3"></i>
+              <h3 class="title-third mb-1">приключения</h3>
+              <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio provident perferendis omnis quidem, eos saepe!</p>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="adventure-card">
+              <i class="adventure-card__icon fa-solid fa-umbrella mb-3"></i>
+              <h3 class="title-third mb-1">приключения</h3>
+              <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio provident perferendis omnis quidem, eos saepe!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-tour">
+        <h2 class="title-second mb-8 text-align-center">наиболее популярные туры</h2>
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="tour-card">
+              <div class="tour-card__side tour-card__side_front">
+                <div class="tour-card__img tour-card__img_1"></div>
+                <h4 class="tour-card__title">
+                  <span class="tour-card__span tour-card__span_1">групповые</span>
+                  <br>
+                  <span class="tour-card__span tour-card__span_2">туры</span></h4>
+                <div class="tour-card__desc">
+                  <ul>
+                    <li>Группы от 6 человек</li>
+                    <li>Продолжительность 2 часа</li>
+                    <li>В группе 1 гид</li>
+                    <li>Дальность полета 6км</li>
+                    <li>Бесплатные сувениры</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tour-card__side tour-card__side_back">
+                <div class="tour-card__backside-box">
+                  <p class="tour-card__text tour-card__text_1">Полная стоимость</p>
+                  <p class="tour-card__text tour-card__text_2">5990&#8381</p>
+                  <button class="button">Забронировать</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="tour-card">
+              <div class="tour-card__side tour-card__side_front">
+                <div class="tour-card__img tour-card__img_2"></div>
+                <h4 class="tour-card__title">
+                  <span class="tour-card__span tour-card__span_1">смотровые</span>
+                  <br>
+                  <span class="tour-card__span tour-card__span_2">площаки</span></h4>
+                <div class="tour-card__desc">
+                  <ul>
+                    <li>Группы от 6 человек</li>
+                    <li>Продолжительность 2 часа</li>
+                    <li>В группе 1 гид</li>
+                    <li>Дальность полета 6км</li>
+                    <li>Бесплатные сувениры</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tour-card__side tour-card__side_back">
+                <div class="tour-card__backside-box">
+                  <p class="tour-card__text tour-card__text_1">Полная стоимость</p>
+                  <p class="tour-card__text tour-card__text_2">5990&#8381</p>
+                  <button class="button">Забронировать</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="tour-card">
+               <div class="tour-card__side tour-card__side_front">
+                <div class="tour-card__img tour-card__img_3"></div>
+                <h4 class="tour-card__title">
+                  <span class="tour-card__span tour-card__span_1">частные</span>
+                  <br>
+                  <span class="tour-card__span tour-card__span_2">туры</span></h4>
+                <div class="tour-card__desc">
+                  <ul>
+                    <li>Группы от 6 человек</li>
+                    <li>Продолжительность 2 часа</li>
+                    <li>В группе 1 гид</li>
+                    <li>Дальность полета 6км</li>
+                    <li>Бесплатные сувениры</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tour-card__side tour-card__side_back">
+                <div class="tour-card__backside-box">
+                  <p class="tour-card__text tour-card__text_1">Полная стоимость</p>
+                  <p class="tour-card__text tour-card__text_2">5990&#8381</p>
+                  <button class="button">Забронировать</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="button">Забронировать</button>
+      </section>
+      <section class="section-feedback">
+        <div class="background-gradient"></div>
+        <video  class="background-video" autoplay muted loop>
+          <source src="src/VIDEO-~1.MP4">  
+          <source src="src/VIDEO-~1.webm">
+        </video>
+        <h2 class="title-second title-second_white mb-8 text-align-center">отзывы наших клиентов</h2>
+        <div class="row mb-1">
+          <div class="feedback-card">
+            <figure class="feedback-card__img">
+              <img src="https://sun9-29.userapi.com/impg/Vrmeo1rg8Srlhw9HV1qCUrIdvDV3f2GD4Ht_IQ/4N00pkWql3E.jpg?size=810x1080&quality=95&sign=9f1b08b15d2e92d3f3863347d8c91d55&type=album" alt="">
+              <figcaption class="feedback-card__name">
+                Сэмча
+              </figcaption>
+            </figure>
+            <div class="feedback-card__box">
+              <h3 class="title-third mb-1">
+                я получил массу приключений
+              </h3>
+              <p class="paragraph">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi animi, voluptatibus corporis voluptatum, nulla mollitia voluptas architecto numquam provident laboriosam quisquam officia recusandae nam magni blanditiis illo esse quod consequuntur!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="feedback-card">
+            <figure class="feedback-card__img">
+              <img src="https://sun9-46.userapi.com/impg/A8crZ3zg7YqTMVRIhds1AHmhFYlHmi6AqaJ_dg/f57x2xC_SgY.jpg?size=607x1080&quality=96&sign=56e985674300b9e3fbbd294ae0e0a14e&type=album" alt="">
+              <figcaption class="feedback-card__name">
+                Руслянь
+              </figcaption>
+            </figure>
+            <div class="feedback-card__box">
+              <h3 class="title-third mb-1">
+                был переполнен эмоциями
+              </h3>
+              <p class="paragraph">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi animi, voluptatibus corporis voluptatum, nulla mollitia voluptas architecto numquam provident laboriosam quisquam officia recusandae nam magni blanditiis illo esse quod consequuntur!
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="button" style="display: block; margin: 0 auto;">Забронировать</button>
+      </section>
+      <section class="section-book">
+        <div class="row">
+          <div class="book">
+            <div class="book__form">
+              <form action="#" class="form">
+                <h2 class="title-second text-align-center mb-3">забронировать тур</h2>
+                <div class="form__group">
+                  <input type="text" name="name" id="name" class="form__input" placeholder="Фамилия Имя" required> 
+                  <label for="name" class="form__label">Введите данные</label>
+                </div>
+                
+                <div class="form__group">
+                  <input type="email" name="email" id="email" class="form__input" placeholder="example@index.ma" required> 
+                  <label for="email" class="form__label">Введите свою почту</label>
+                </div>
+
+                <div class="form__group">
+                  <div class="form__group-radio">
+                    <input type="radio" name="tour" class="form__input-radio" id="tour-1">
+                    <label for="tour-1" class="form__label-radio"><span class="form__button-radio"></span>Групповой тур</label>
+                  </div>
+                  <div class="form__group-radio">
+                    <input type="radio" name="tour" class="form__input-radio" id="tour-2">
+                    <label for="tour-2" class="form__label-radio"><span class="form__button-radio"></span>Индивидуальный тур</label>
+                  </div>
+                </div>
+
+                <div class="form__group">
+                  <button  class="button button_brown">Забронировать</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="row text-align-center">
+        <img src="src/balloon-1-svgrepo-com.svg" alt="Логотип воздушный шар" class="footer__logo">
+      </div>
+      <div class="row">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">о нас</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">скидки</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">лучшие туры</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">калькулятор цены</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">связаться с нами</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

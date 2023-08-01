@@ -1,0 +1,68 @@
+.feedback-card {
+	width: 80%;
+	background-color: rgba($color: $color-white, $alpha: 0.75);
+	box-shadow: $box-shadow;
+	margin: 0 auto;
+	padding: 6rem;
+	transform: skewX(-15deg);
+
+	& > * {
+		transform: skewX(15deg);
+	}
+	&__img {
+		width: 15rem;
+		height: 15rem;
+		float: left;
+		border-radius: 100rem;
+		shape-outside: circle(50%);
+		-webkit-shape-outside: circle(50%);
+		margin-right: 4rem;
+		overflow: hidden;
+		position: relative;
+
+		img {
+			transform: scale(1.2);
+			height: 100%;
+			width: 100%;
+			transition: all 0.2s ease-in-out;
+		}
+	}
+
+	&__name {
+		@include absolute-center;
+		text-align: center;
+		font-size: 2rem;
+		font-weight: 400;
+		color: $color-white;
+		letter-spacing: 0.2rem;
+		opacity: 0;
+		transition: all 0.2s ease-in-out;
+	}
+
+	&:hover &__name {
+		opacity: 1;
+	}
+	&:hover &__img img {
+		transform: scale(1);
+		filter: blur(0.3rem) brightness(60%);
+	}
+}
+
+@include respond(tablet) {
+	.feedback-card {
+		transform: skewX(-10deg);
+
+		& > * {
+			transform: skewX(10deg);
+		}
+		&__img {
+			margin: 0 auto;
+			margin-bottom: 3rem;
+			float: none;
+		}
+
+		&__box {
+			text-align: center;
+		}
+	}
+}
